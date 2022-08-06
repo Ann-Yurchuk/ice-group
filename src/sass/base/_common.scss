@@ -1,1 +1,13 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+    margin: 0;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: var(--secondary-text-color);
+    background-color: var(--primary-bcg-color) ;
+}
+ 
+
+    
