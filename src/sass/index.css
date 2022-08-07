@@ -111,7 +111,13 @@ html {
 .advantages__item {
   list-style: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages__item {
+    max-width: 170px;
+    --items: 3;
+  }
+}
+@media screen and (min-width: 1200px) {
   .advantages__item {
     max-width: 270px;
     --items: 3;
