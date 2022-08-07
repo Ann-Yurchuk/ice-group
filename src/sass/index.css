@@ -1,0 +1,83 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --accent-color: #D41443;
+  --secondary-accent-color: #FFA5BA;
+  --hero-bcg-color: #FFB8CA;
+  --primary-bcg-color: #E5E5E5;
+  --secondary-bcg-color: #FFF5F6;
+  --primary-text-color: #FFFFFF;
+  --secondary-text-color: #000000;
+  --text-color: #907E82;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans";
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: var(--secondary-text-color);
+  background-color: var(--primary-bcg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}/*# sourceMappingURL=index.css.map */
