@@ -1,10 +1,19 @@
 :root {
-    --accent-color: #D41443;
-    --secondary-accent-color: #FFA5BA;
-    --hero-bcg-color: #FFB8CA;
-    --primary-bcg-color: #E5E5E5;
-    --secondary-bcg-color: #FFF5F6;
-    --primary-text-color: #FFFFFF;
-    --secondary-text-color: #000000;
-    --text-color: #907E82;
+  --accent-color: #d41443;
+  --secondary-accent-color: #ffa5ba;
+  --hero-bcg-color: #ffb8ca;
+  --primary-bcg-color: #e5e5e5;
+  --secondary-bcg-color: #fff5f6;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #000000;
+  --text-color: #907e82;
+
+  // ============ переменные для card-set ==================
+  // -----количество елементов сетки-------
+  --items: 3;
+  // -----количество елементов сетки/-------
+  // -----отступ между ел-------
+  --indent: 30px;
+  // -----отступ между ел/-------
+  // ============переменные для card-set/==================
 }
