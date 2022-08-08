@@ -26,6 +26,7 @@
     height: 40px;
     margin-right: -8px;
     margin-left: -20px;
+    margin-top: -20px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,19 +37,14 @@
     margin-left: auto;
     margin-right: auto;
     width: 63%;
+    // height: 249;
 
     font-weight: 500;
     font-size: 12px;
     text-align: center;
     line-height: 2.58;
 
-    background: repeating-linear-gradient(#FAFAFA 0px, #FAFAFA 48px, #E1E1E1 48px, #E1E1E1 49px,#FAFAFA 49px, #FAFAFA 79px, #E1E1E1 79px, #E1E1E1 80px, #FAFAFA 80px,
-    #FAFAFA 110px,#E1E1E1 110px,#E1E1E1 111px, #FAFAFA 111px,
-    #FAFAFA 141px,#E1E1E1 141px,#E1E1E1 142px, #FAFAFA 142px,
-    #FAFAFA 172px,#E1E1E1 172px,#E1E1E1 173px, #FAFAFA 173px,
-    #FAFAFA 203px,#E1E1E1 203px,#E1E1E1 204px, #FAFAFA 204px,
-    #FAFAFA 234px,#E1E1E1 234px,#E1E1E1 235px, #FAFAFA 235px,
-    #FAFAFA 265px,#E1E1E1 265px,#E1E1E1 266px);
+    background: repeating-linear-gradient(#FAFAFA 0px, #FAFAFA 30px, #E1E1E1 30px, #E1E1E1 31px);
 
     transition: color 250ms linear;
 
@@ -66,11 +62,6 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.85;
-}
-
-.slick-prev,
-.slick-next {
-    top: 58%;
 }
 
 .slick-dots {
@@ -104,8 +95,8 @@
 
 .slick-prev:before, .slick-next:before {
     color: #C7133E;
+    opacity: 0;
 }
-
 
 #slick-slide-control00::after,
 #slick-slide-control01::after,
@@ -134,3 +125,10 @@
     background-color: #ffffff;
     border-radius: 0;
 }
+
+.slick-prev,
+.slick-next,
+.slick-arrow {
+    display: none;
+}
+
