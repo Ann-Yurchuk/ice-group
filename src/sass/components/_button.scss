@@ -15,18 +15,22 @@
 }
 .btn.primary {
    color: var(--accent-color);
-    background-color: var(--primary-btn-color);
+   background-color: var(--primary-btn-color);
+
  &:hover {
-      background-color: var( --primary-btn-hover);
+    background-color: var( --primary-btn-hover);
 }
   }
+
 .btn.secondary {
     color: var(--primary-text-color);
-    background: var(--accent-color);
+    background: var(--secondary-btn-color);
+
  &:hover {
-      background-color: var (--secondary-btn-color);
+    background-color: var (--secondary-btn-hover);
 }
 }
+
 .btn-hero {
 @media screen and (min-width: 320px) and (max-width: 1199px) {
     font-weight: 400;
@@ -35,6 +39,7 @@
     height: 24px;
     border-radius: 20px;
 }
+
 @media screen and (min-width: 1200px) {
     font-weight: 400;
     font-size: 14px;
