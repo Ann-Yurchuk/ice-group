@@ -1,4 +1,9 @@
+.advantages {
+    background-color: var(--secondary-bcg-color);
+}
+
 .advantages__list {
+    gap: 32px;
   @media screen and(min-width:768px) {
     gap: 22px;
   }
@@ -12,7 +17,7 @@
     --items: 3;
   }
   @media screen and(min-width:1200px) {
-    max-width: 270px;
+    max-width: 317px;
     --items: 3;
   }
 }
@@ -90,14 +95,17 @@
   font-size: 12px;
   line-height: 1.7;
   color: var(--secondary-text-color);
+
   &:not(:last-child) {
     margin-bottom: 32px;
   }
+
   @media screen and(min-width:768px) and(max-width:1199px) {
     margin: 0;
     font-size: 14px;
     line-height: 1.71;
   }
+
   @media screen and(min-width:1200px) {
     margin: 0;
     font-size: 16px;
