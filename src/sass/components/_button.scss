@@ -13,7 +13,7 @@
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn.primary {
+.btn-primary {
    color: var(--accent-color);
    background-color: var(--primary-btn-color);
 
@@ -22,7 +22,7 @@
 }
   }
 
-.btn.secondary {
+.btn-secondary {
     color: var(--primary-text-color);
     background: var(--secondary-btn-color);
 
