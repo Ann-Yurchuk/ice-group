@@ -9,8 +9,6 @@
 }
 
 .advantages__item {
-  list-style: none;
-
   @media screen and(min-width:768px) and(max-width:1199px) {
     max-width: 170px;
     --items: 3;
@@ -115,14 +113,16 @@
 }
 
 .advantages__benefits-paragraph {
-  margin-bottom: 32px;
-
   font-family: 'DM Sans';
   font-weight: 700;
   font-size: 12px;
   line-height: 1.7;
 
   color: var(--secondary-text-color);
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
 
   @media screen and(min-width:768px) and(max-width:1199px) {
     margin: 0;
