@@ -1,15 +1,4 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-:root {
-  --accent-color: #d41443;
-  --secondary-accent-color: #ffa5ba;
-  --hero-bcg-color: #ffb8ca;
-  --primary-bcg-color: #e5e5e5;
-  --secondary-bcg-color: #fff5f6;
-  --primary-text-color: #ffffff;
-  --secondary-text-color: #000000;
-  --text-color: #907e82;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
