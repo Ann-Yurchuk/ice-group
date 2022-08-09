@@ -1,46 +1,73 @@
-<header class="container">
-  <div class="header__item">
-    <a class="link header__logo" data-logo href="./index.html">
-      <svg width="199" height="50">
-        <use href="./images/icons.svg#icon-icecream-logo"></use>
-      </svg>
-    </a>
-    <nav class="nav">
-      <ul class="list nav__list">
-        <li class="nav__item">
-          <a
-            class="link nav__link--current"
-            href="./index.html"
-            aria-label="home"
-          >
-            Home</a
-          >
-        </li>
-        <li class="nav__item">
-          <a class="link nav__link" href="#about" aria-label="about us"
-            >About us</a
-          >
-        </li>
-        <li class="nav__item">
-          <a
-            class="link nav__link"
-            href="#how"
-            aria-label="how it&#8217;s made?"
-            >How it&#8217;s made?</a
-          >
-        </li>
-        <li class="nav__item">
-          <a class="link nav__link" href="#prodacts" aria-label="our products"
-            >Our products</a
-          >
-        </li>
-        <li class="nav__item">
-          <a class="link nav__link" href="#contact" aria-label="contact"
-            >Contact</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <button type="button" class="button btn-primary">Buy now</button>
+<header>
+  <div class="header__container">
+    <div class="header__item">
+      <a class="link header__logo" data-logo href="./index.html">
+        <svg width="199" height="50">
+          <use href="./images/icons.svg#icon-icecream-logo"></use>
+        </svg>
+      </a>
+      <div class="burger-menu" id="burger-menu" data-menu>
+        <nav class="nav">
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a
+                class="link nav__link--current"
+                href="./index.html"
+                aria-label="home"
+              >
+                Home</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="link nav__link" href="#about" aria-label="about us"
+                >About us</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                class="link nav__link"
+                href="#how"
+                aria-label="how it&#8217;s made?"
+                >How it&#8217;s made?</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                class="link nav__link"
+                href="#prodacts"
+                aria-label="our products"
+                >Our products</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="link nav__link" href="#contact" aria-label="contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="button btn-primary">Buy now</button>
+      </div>
+      <button
+        class="burger-menu__btn"
+        data-menu-button
+        type="button"
+        aria-label="mobile menu button"
+      >
+        <svg
+          class="burger-menu__btn-icon"
+          width="20"
+          height="12"
+          aria-label="mobile menu switch"
+          aria-controls="burger-menu"
+        >
+          <use class="icon-menu" href="./images/icons.svg#icon-burger"></use>
+          <use class="icon-cross" href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <button type="button" class="button btn-primary btn-tbl-header">
+        Buy now
+      </button>
+    </div>
   </div>
 </header>
