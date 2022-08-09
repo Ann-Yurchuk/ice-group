@@ -76,17 +76,19 @@
   font-size: 36px;
   line-height: 1.14;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
+  
   color: var(--accent-color);
   @media screen and(min-width:768px) and(max-width:1199px) {
     margin-bottom: 13px;
     font-size: 48px;
     line-height: 1.15;
+    
   }
   @media screen and(min-width:1200px) {
     margin-bottom: 16px;
     font-size: 58px;
     line-height: 1.13;
+    
   }
 }
 .advantages__benefits-paragraph {
