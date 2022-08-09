@@ -1,0 +1,268 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 502px;
+    background-color: var(--hero-bcg-color);
+    overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+        height: 416px;
+    }
+}
+
+.hero-title {
+    position: absolute;
+    bottom: 40%;
+    left: 5%;
+    z-index: 6;
+    width: 218px;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+
+    &__current {
+        font-size: 48px;
+        color: var(--accent-color);
+
+        @media screen and (min-width: 768px){
+            font-weight: 400;
+            font-size: 34px;
+            line-height: 0.88;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        bottom: 53%;
+        width: 162px;
+
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.13;
+    }
+}
+
+.hero__elipse::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 15%;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    background-color: var(--secondary-accent-color);
+
+    @media screen and (max-width: 559px) {
+        left: 9%;
+    }
+
+    @media screen and (min-width: 560px) {
+        right: 36%;
+    }
+
+    @media screen and (min-width: 768px){
+        width: 335px;
+        height: 333px;
+        right: 23%;
+        top: 10%;
+    }
+}
+
+.hero__img {
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    z-index: 5;
+
+    @media screen and (min-width: 768px) {
+        width: 143px;
+        height: 336px;
+        left: 42%;
+    }
+
+}
+
+.hero-btn {
+    position: absolute;
+    bottom: 31%;
+    left: 5%;
+    z-index: 5;
+    display: flex;
+
+    @media screen and (min-width: 768px) {
+        bottom: 43%;
+    }
+}
+
+.hero-btn__products {
+    margin-right: 8px;
+}
+
+.hero__snap {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        bottom: 4%;
+        left: 6%;
+    }
+}
+
+.hero__descr {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        bottom: 20%;
+        left: 25%;
+        z-index: 5;
+        width: 121px;
+        font-weight: 400;
+        font-size: 7px;
+        line-height: 1.5;
+        color: var(--primary-text-color);
+    }
+}
+
+.hero__wrap {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        bottom: 13%;
+        left: 25%;
+        border-radius: 50%;
+        background-color: var(--primary-text-color);
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+        transition: background-color 250ms linear, opacity 250ms linear;
+            
+            &:hover,
+            &:focus {
+                background-color: var(--accent-color);
+                opacity: 0.8;
+            }
+    }
+}
+
+.hero__arrow {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        bottom: 31%;
+        left: 28%;
+        fill: var(--accent-color);
+        transition: fill 250ms linear;
+    }
+}
+
+.hero__wrap:hover .hero__arrow {
+    fill: var(--primary-text-color);
+}
+
+.hero-info {
+    display: none;
+
+    @media screen and (min-width: 560px) {
+    display: block;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    color: var(--primary-text-color);
+
+    &__number {
+        font-family: 'Titan One';
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 1.14;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--accent-color);
+    }
+
+    &--cafes,
+    &--trucks {
+        position: absolute;
+        right: 4%;
+        z-index: 6;
+
+    }
+    
+    &--cafes {
+        top: 20%;
+        right: 4%;
+
+        @media screen and (min-width: 768px) {
+            right: 5.5%;
+        }
+    }
+    
+    &--trucks {
+        top: 37%;
+        right: 2%;
+
+        @media screen and (min-width: 768px) {
+            right: 4%;
+        }
+    }
+
+    }
+}
+
+
+.hero-info__number--16::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 69%;
+    bottom: 74%;
+    z-index: -1;
+            
+    width: 16px;
+    height: 16px;
+    text-align: right;
+    border-radius: 50%;
+    background-color: var(--primary-text-color);
+
+}
+
+.hero-info__number--23::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 56%;
+    bottom: 75%;
+    z-index: -1;
+
+    width: 16px;
+    height: 16px;
+    text-align: right;
+    border-radius: 50%;
+    background-color: var(--primary-text-color);
+
+}
+
+
+.hero__pic {
+    display: none;
+    @media screen and (min-width: 560px) {
+        display: block;
+        position: absolute;
+        right: 3%;
+        bottom: 0;
+        z-index: 5;
+    }
+
+    @media screen and (min-width: 768px) {
+        right: 4%;
+    }
+}
