@@ -1,0 +1,117 @@
+.advantages {
+    background-color: var(--secondary-bcg-color);
+}
+
+.advantages__list {
+    gap: 32px;
+  @media screen and(min-width:768px) {
+    gap: 22px;
+  }
+  @media screen and(min-width:1200px) {
+    gap: 115px;
+  }
+}
+.advantages__item {
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    max-width: 170px;
+    --items: 3;
+  }
+  @media screen and(min-width:1200px) {
+    max-width: 288px;
+    --items: 3;
+  }
+}
+.advantages__icon-milk::before {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-image: url(../images/logo/milk-logo.png);
+  background-repeat: no-repeat;
+  background-position: -8px 0;
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    margin-bottom: 36px;
+    background-position: 0 0;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 40px;
+    background-position: 0 0;
+  }
+}
+.advantages__icon-heart::before {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-image: url(../images/logo/heart-logo.png);
+  background-repeat: no-repeat;
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    margin-bottom: 36px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 40px;
+  }
+}
+.advantages__icon-apples::before {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-image: url(../images/logo/apples-logo.png);
+  background-repeat: no-repeat;
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    margin-bottom: 36px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 40px;
+  }
+}
+.advantages__benefits-content {
+  margin-bottom: 4px;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  
+  color: var(--accent-color);
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    margin-bottom: 13px;
+    font-size: 48px;
+    line-height: 1.15;
+    
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 16px;
+    font-size: 58px;
+    line-height: 1.13;
+    
+  }
+}
+.advantages__benefits-paragraph {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--secondary-text-color);
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+  }
+}
