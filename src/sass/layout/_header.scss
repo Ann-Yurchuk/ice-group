@@ -230,7 +230,7 @@
     font-size: 14px;
     line-height: 1;
     letter-spacing: 0.02em;
-    margin-top: 123px;
+    margin-top: 20px;
     
 }
 
@@ -338,4 +338,16 @@
 @media screen and (min-width: 1200px) {
     margin-left: 141px;
     }
+}
+
+.btn-mobile-menu {
+    margin-left: auto;
+        margin-right: auto;
+    @media screen and (max-width: 1199px) {
+            margin-top: 58px;
+        }
+
+    @media screen and (min-width: 1200px) {
+            display: none;
+        }
 }
