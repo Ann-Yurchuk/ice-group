@@ -133,7 +133,7 @@
     align-items: center;
   
     justify-content: center;
-    margin-top: 10px;
+    
     padding: 0;
     z-index: 1000;
     
@@ -179,24 +179,32 @@
 }
 
 .mobile-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
+
     display: flex;
     
     flex-direction: column;
     position: fixed;
     z-index: 100;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    
     height: 100%;
    
-    transform: translateX(115%);
+    transform: translateX(100%);
    
    
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     background-color: var(--menu-bcg-color);
+
+    @media screen and (min-width: 320px) {
+    width: 250px;
+    }
+
+         @media screen and (min-width: 768px) {
+             width: 254px;
+         }
+    
     @media screen and (min-width: 1200px) {
         display: none;
             
@@ -330,7 +338,11 @@
 .btn-mobile-menu {
     margin-left: auto;
         margin-right: auto;
-    @media screen and (max-width: 1199px) {
+
+        @media screen and (min-width: 320px) {
+                margin-top: 60px;
+            }
+    @media screen and (min-width: 768px) {
             margin-top: 58px;
         }
 
