@@ -735,10 +735,6 @@ html {
   }
 }
 
-* {
-  outline: solid 1px red;
-}
-
 .advantages {
   background-color: var(--secondary-bcg-color);
 }
