@@ -1,46 +1,89 @@
-<header class="container">
-  <div class="header__item">
-    <a class="link header__logo" data-logo href="./index.html">
-      <svg width="199" height="50">
-        <use href="./images/icons.svg#icon-icecream-logo"></use>
-      </svg>
-    </a>
-    <nav class="nav">
-      <ul class="list nav__list">
-        <li class="nav__item">
+<header class="header">
+  <div class="container">
+    <nav class="header__nav">
+      <a class="header__logo logo link" href="./index.html">
+        <svg class="header__logo-icon" width="199" height="50">
+          <use href="./images/icons.svg#icon-icecream-logo"></use>
+        </svg>
+      </a>
+
+      <button
+        class="mobile-menu-btn"
+        type="button"
+        aria-label="button-open"
+        data-menu-button=""
+        aria-expanded="false"
+      >
+        <svg class="mobile-menu-icon" width="24" height="16">
+          <use
+            class="mobile-menu-open"
+            href="./images/icons.svg#icon-burger"
+          ></use>
+          <use
+            class="mobile-menu-close"
+            href="./images/icons.svg#icon-close"
+          ></use>
+        </svg>
+      </button>
+
+      <div class="mobile-menu" data-menu="">
+        <ul class="mobile-menu-nav list">
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-link link current-nav" href="./index.html"
+              >Home</a
+            >
+          </li>
+
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-link link" href="#about">About us</a>
+          </li>
+
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-link link" href="#how">How it s made?</a>
+          </li>
+
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-link link" href="#products"
+              >Our products</a
+            >
+          </li>
+
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-link link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="header__list list">
+        <li class="header__item">
           <a
-            class="link nav__link--current"
+            class="header__link--сurrent contact__link link"
             href="./index.html"
-            aria-label="home"
-          >
-            Home</a
+            >Home</a
           >
         </li>
-        <li class="nav__item">
-          <a class="link nav__link" href="#about" aria-label="about us"
-            >About us</a
+
+        <li class="header__item">
+          <a class="header__link contact__link link" href="#about">About us</a>
+        </li>
+
+        <li class="header__item">
+          <a class="header__link contact__link link" href="#how"
+            >How it s made?</a
           >
         </li>
-        <li class="nav__item">
-          <a
-            class="link nav__link"
-            href="#how"
-            aria-label="how it&#8217;s made?"
-            >How it&#8217;s made?</a
-          >
-        </li>
-        <li class="nav__item">
-          <a class="link nav__link" href="#prodacts" aria-label="our products"
+
+        <li class="header__item">
+          <a class="header__link contact__link link" href="#products"
             >Our products</a
           >
         </li>
-        <li class="nav__item">
-          <a class="link nav__link" href="#contact" aria-label="contact"
-            >Contact</a
-          >
+
+        <li class="header__item">
+          <a class="header__link contact__link link" href="#contact">Contact</a>
         </li>
       </ul>
+      <button class="button btn-primary btn-header">Buy now</button>
     </nav>
-    <button type="button" class="button btn-primary">Buy now</button>
   </div>
 </header>
