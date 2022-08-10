@@ -68,10 +68,12 @@
 }
 .footer__description {
     margin-bottom: 16px;
+    text-align: start;
 
 @media screen and (min-width: 768px) {
     margin-bottom: 12px;
     width: 340px;
+    text-align: start;
 }
     
 @media screen and (min-width: 1200px) {
@@ -84,9 +86,11 @@
     width: 253px;
     display: flex;
     margin-bottom: 40px;
+    text-align: start;
 
 @media screen and (min-width: 768px) {
     width: 340px;
+    text-align: start;
 }
 
 @media screen and (min-width: 1200px) {
@@ -165,7 +169,7 @@
 }
 
 .footer__copyright {
-    font-family: DM Sans;
+    font-family: 'DM Sans';
     font-size: 14px;
     line-height: 1.87;
     align-items: center;
