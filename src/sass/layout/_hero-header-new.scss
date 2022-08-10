@@ -351,7 +351,7 @@
     margin-left: auto;
     margin-right: auto;
 
-  
+    
 
     @media screen and (min-width: 1200px) {
         display: none;
@@ -614,10 +614,10 @@
         right: 4%;
 
         @media screen and (min-width: 768px) {
-            right: 5%;
+            right: 5.5%;
         }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 768px) {
             right: 2%;
         }
     }
@@ -627,7 +627,7 @@
         right: 2%;
 
         @media screen and (min-width: 768px) {
-            right: 3%;
+            right: 0.5%;
         }
 
         @media screen and (min-width: 1200px) {
@@ -705,19 +705,20 @@
     }
 }
 
+
 .side-nav__close-btn {
     fill: #fff;
-
-    margin-left: auto;
-    padding: 20px;
-    display: block;
-
-    border: none;
-    background-color: transparent;
-
-    &:hover,
-    &:focus {
-        outline: none;
-        fill: var(--secondary-btn-hover);
-    }
+    
+        margin-left: auto;
+        padding: 20px;
+        display: block;
+      
+        border: none;
+        background-color: transparent;
+    
+        &:hover,
+        &:focus {
+            outline: none;
+            fill: var(--secondary-btn-hover);
+        }
 }
