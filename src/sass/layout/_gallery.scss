@@ -1,17 +1,20 @@
+.gallery{
+   background-image: linear-gradient(
+    to bottom,
+    var(--secondary-bcg-color) 10%,
+    var(--gallery-bcg-color) 90%);
+}
+
 .gallery__container {
   display: grid;
   grid-template-columns: repeat(auto-fill, auto);
   grid-template-rows: repeat(15, auto);
   grid-auto-flow: dense;
-  background-image: linear-gradient(
-    to bottom,
-    var(--secondary-bcg-color) 10%,
-    var(--primary-bcg-color) 90%);
-   min-width: 320px;
+  min-width: 320px;
   padding: 0;
   gap: 2.5px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1030px) {
     justify-content: center;
     align-items: center;
   }
@@ -20,35 +23,35 @@
 .box {
   border-radius: 8px;
   overflow: hidden;
-  width: 44px;
-  height: 44px;
+//   width: 44px;
+//   height: 44px;
 
   @media screen and (min-width: 768px) {
-    border-radius: 20px;
-    width: 105px;
-    height: 105px;
-  }
+    border-radius: 20px;}}
+//     width: 105px;
+//     height: 105px;
+//   }
 
-  @media screen and (min-width: 1200px) {
-    width: 138px;
-    height: 139px;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     width: 138px;
+//     height: 139px;
+//   }
+// }
 
-.box:nth-child(4) {
-  width: 89px;
-  height: 90px;
+// .box:nth-child(4) {
+//   width: 89px;
+//   height: 90px;
 
-  @media screen and (min-width: 768px) {
-    width: 215px;
-    height: 215px;
-  }
+//   @media screen and (min-width: 768px) {
+//     width: 215px;
+//     height: 215px;
+//   }
 
-  @media screen and (min-width: 1200px) {
-    width: 283px;
-    height: 283px;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     width: 283px;
+//     height: 283px;
+//   }
+// }
 
 // .gallery__img {
 //   max-width: 100%;
