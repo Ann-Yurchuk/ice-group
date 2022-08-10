@@ -10,12 +10,12 @@
 
         <div class="header__btns">
           <button
-            class="mobile-menu-btn"
-            type="button"
-            aria-label="button-open"
+            class="mobile-menu-btn js-open-menu"
             aria-expanded="false"
+
             data-menu-button
-          >
+            aria-controls="mobile-menu"
+            type="button">
             <svg class="mobile-menu-icon" width="20" height="14">
               <use
                 class="mobile-menu-open"
@@ -24,6 +24,7 @@
             </svg>
           </button>
 
+
           <div class="mobile-menu" data-menu>
             <button
               type="button"
@@ -31,14 +32,21 @@
               class="side-nav__close-btn"
               data-mobile-nav-close
             >
+
+          
+
               <svg class="mobile-menu-close" width="16" height="16">
                 <use href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
+
             <button type="button" class="button btn-primary btn-mobile-menu">
               Buy now
               <svg class="btn-mobile-menu__svg" width="4" height="8">
                 <use href="./images/icons.svg#icon-arrow-right"></use>
+
+            
+
               </svg>
             </button>
             <ul class="mobile-menu-nav list">

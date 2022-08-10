@@ -1,8 +1,7 @@
 .hero-header {
     width: 100%;
     background-color: var(--hero-bcg-color);
-}
-
+    
 .hero-header__container {
     position: relative;
     width: 100%;
@@ -131,7 +130,7 @@
 
     justify-content: center;
     padding: 0;
-    z-index: 1000;
+    
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -145,12 +144,16 @@
 .mobile-menu-open {
     stroke: var(--accent-color);
     transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 
 .mobile-menu-btn:hover .mobile-menu-open {
     stroke: #ffffff;
+    
 }
+
+
 
 .mobile-menu-btn:hover,
 .mobile-menu-btn:focus {
@@ -177,15 +180,13 @@
 .mobile-menu-close {
     top: 0;
     right: 0;
-    opacity: 0;
+    opacity: 1;
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
-.mobile-menu-btn.is-open .mobile-menu-close {
-    opacity: 1;
-}
+
 
 .btn-mobile-menu__svg {
     color: red;
@@ -346,6 +347,7 @@
 
     @media screen and (max-width: 1199px) {
         margin-left: 32px;
+        
     }
 
     @media screen and (min-width: 1200px) {
