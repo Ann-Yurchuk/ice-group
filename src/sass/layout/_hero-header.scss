@@ -143,12 +143,16 @@
 .mobile-menu-open {
     stroke: var(--accent-color);
     transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 
 .mobile-menu-btn:hover .mobile-menu-open {
     stroke: #ffffff;
+    
 }
+
+
 
 .mobile-menu-btn:hover,
 .mobile-menu-btn:focus {
@@ -175,15 +179,13 @@
 .mobile-menu-close {
     top: 0;
     right: 0;
-    opacity: 0;
+    opacity: 1;
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
-.mobile-menu-btn.is-open .mobile-menu-close {
-    opacity: 1;
-}
+
 
 .mobile-menu {
 
