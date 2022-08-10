@@ -4,8 +4,19 @@
         <h2 class="product__main-title">products</h2>
         <ul class="product__list card-set list">
             <li class="product__item card-set__item">
+                <picture>
+                    <!-- Desktop -->
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/products/ice-cream-1__desktop.png 1x, ./images/products/ice-cream-1__desktop@2x.png 2x" type="image/png" />
+                    <!-- Tablet -->
+                    <source media="(min-width: 768px)"
+                        srcset="./images/products/ice-cream-1__tablet.png 1x, ./images/products/ice-cream-1__tablet@2x.png 2x" type="image/png" />
+                    <!-- Mobile -->
+                    <source media="(max-width: 767px)"
+                        srcset="./images/products/ice-cream-1__mobile.png 1x, ./images/products/ice-cream-1__mobile@2x.png 2x" type="image/png" />
+                <img src="./images/products/ice-cream-1__mobile.png" alt="ice-cream">
+                </picture>
                 <div class="product__dessert">
-                    <img src="./images/products/ice-cream-1__mobile.png" alt="ice-cream">
                     <h2 class="product__title">ice cream</h2>
                     <p class="product__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
                     <button type="button">
@@ -14,8 +25,22 @@
                 </div>
             </li>
             <li class="product__item card-set__item">
-                <div class="product__dessert">
+                <picture>
+                    <!-- Desktop -->
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/products/ice-cream-2__desktop.png 1x, ./images/products/ice-cream-2__desktop@2x.png 2x"
+                        type="image/png" />
+                    <!-- Tablet -->
+                    <source media="(min-width: 768px)"
+                        srcset="./images/products/ice-cream-2__tablet.png 1x, ./images/products/ice-cream-2__tablet@2x.png 2x"
+                        type="image/png" />
+                    <!-- Mobile -->
+                    <source media="(max-width: 767px)"
+                        srcset="./images/products/ice-cream-2__mobile.png 1x, ./images/products/ice-cream-2__mobile@2x.png 2x"
+                        type="image/png" />
                     <img src="./images/products/ice-cream-2__mobile.png" alt="ice-coffee">
+                </picture>
+                <div class="product__dessert">
                     <h2 class="product__title">ice cream</h2>
                     <p class="product__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et</p>
@@ -25,12 +50,26 @@
                 </div>
             </li>
             <li class="product__item card-set__item">
-                <div class="product__dessert">
+                <picture>
+                    <!-- Desktop -->
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/products/ice-cream-3__desktop.png 1x, ./images/products/ice-cream-3__desktop@2x.png 2x"
+                        type="image/png" />
+                    <!-- Tablet -->
+                    <source media="(min-width: 768px)"
+                        srcset="./images/products/ice-cream-3__tablet.png 1x, ./images/products/ice-cream-3__tablet@2x.png 2x"
+                        type="image/png" />
+                    <!-- Mobile -->
+                    <source media="(max-width: 767px)"
+                        srcset="./images/products/ice-cream-3__mobile.png 1x, ./images/products/ice-cream-3__mobile@2x.png 2x"
+                        type="image/png" />
                     <img src="./images/products/ice-cream-3__mobile.png" alt="milkshakes">
+                </picture>
+                <div class="product__dessert">
                     <h2 class="product__title">ice cream</h2>
                     <p class="product__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et</p>
-                    <button type="button">
+                    <button type="button" class="product-description">
                         <img src="./images/logo/arrow-right-logo.png" alt="arrow-right">
                     </button>
                 </div>
