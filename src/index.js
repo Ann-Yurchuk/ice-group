@@ -1,1 +1,3 @@
-import "./js/gallery";
+import './js/slick-slider'
+import './js/menu'
+
