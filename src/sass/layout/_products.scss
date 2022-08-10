@@ -20,29 +20,25 @@
 }
 
 .product__item {
-    width: 280px;
-    height: 629px;
-    margin-bottom: 20px;
-
-    @media screen and(min-width:768px) {
-    width: 224px;
-    height: 611px;
-    }
-    
-    @media screen and(min-width:1200px) {
-    width: 368px;
-    height: 535px;
-    }
+    text-align: center;
 }
 
 .product__dessert{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-   background-color: #FFB8CA;
     
+   background-color: #FFB8CA;
+    width: 280px;
+    height: 629px;
+       
+    
+        @media screen and(min-width:768px) {
+            width: 224px;
+            height: 611px;
+        }
+    
+        @media screen and(min-width:1200px) {
+            width: 368px;
+            height: 535px;
+        }
 
     
 }
