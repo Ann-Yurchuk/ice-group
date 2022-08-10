@@ -507,17 +507,17 @@
     @media screen and (min-width: 768px) {
         display: block;
         position: absolute;
-        bottom: 20%;
-        left: 25%;
+        bottom: 150%;
+        left: 2%;
         z-index: 5;
         width: 121px;
         font-weight: 400;
         font-size: 7px;
         line-height: 1.5;
         color: var(--primary-text-color);
-        // transform: translateX(-100%);
-        // opacity: 0;
-        // transition: opacity 250ms linear, transform 250ms linear;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: opacity 250ms linear, transform 250ms linear;
     }
 
     @media screen and (min-width: 1200px) {
@@ -557,11 +557,12 @@
     }
 }
 
-// .hero__wrap:hover .hero__descr,
-// .hero__wrap:focus .hero__descr {
-//     transform: translateX(0);
-//     opacity: 1;
-// }
+.hero__wrap:hover .hero__descr,
+.hero__wrap:focus .hero__descr {
+    transform: translateX(0);
+    opacity: 1;
+    
+}
 
 .hero__arrow {
     display: none;
