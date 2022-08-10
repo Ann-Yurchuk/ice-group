@@ -59,10 +59,8 @@
   background-position: -8px 0;
 
   @media screen and(min-width:768px) and(max-width:1199px) {
-
     margin-bottom: 36px;
     background-position: -8px 0;
-
   }
 
   @media screen and(min-width:1200px) {
@@ -133,7 +131,7 @@
   color: var(--secondary-text-color);
 
   &:not(:last-child) {
-    margin-bottom: 32px ;
+    margin-bottom: 32px;
   }
 
   @media screen and(min-width:768px) and(max-width:1199px) {
