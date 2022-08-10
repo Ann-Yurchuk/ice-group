@@ -8,9 +8,9 @@
     flex-wrap: nowrap;
   }
 }
+.advantages__item {
 
 @media screen and(min-width:768px) and (max-width: 1199px) {
-  .advantages__item {
     margin-left: 20px;
     max-height: 162px;
   }

@@ -1,14 +1,11 @@
-.products{
+.products {
     background-color: var(--primary-text-color);
-}
+
+    }
+
 
 .product__label{
-    text-align: center;
     margin-bottom: 16px;
-}
-
-.product__main-title{
-    text-align: center;
 }
 
 .product__list{
@@ -34,14 +31,22 @@
     
     @media screen and(min-width:1200px) {
     width: 368px;
-    height: 796px;
+    height: 535px;
     }
 }
 
 .product__dessert{
-    background-color: #FFB8CA;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+   background-color: #FFB8CA;
+    
+
+    
 }
+    
 
 .product__title{
     font-family: 'Titan One';
@@ -96,6 +101,16 @@
             
         }
 }
+
+
+.product__wrap {
+    bottom: 0;
+    left: 25%;
+}
+    
+    
+
+
 
 
 
