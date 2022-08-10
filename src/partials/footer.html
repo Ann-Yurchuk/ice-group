@@ -1,7 +1,7 @@
 <footer class="section footer">
   <div class="footer_section">
     <div class="container footer__btn">
-      <button type="button" class="button btn-secondary button__footer-map">Our Locations
+      <button type="button" class="button btn-secondary button__footer-map" data-modal-open>Our Locations
         <svg class="btn__arow-white" width="9" height="16">
           <use href="./images/icons.svg#icon-aroww"></use>
         </svg>
@@ -54,3 +54,14 @@
   </div>
   <p class="footer__copyright">&#169; 2022 - IceCream. All Rights Reserved.</p>
 </footer>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="button-close" data-modal-close>
+      <svg class="icon-close" width="18px" height="18px">
+        <use href="./images/icons.svg#icon-close-modal"></use>
+      </svg>
+    </button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7171.337438021609!2d-80.1477301066379!3d26.011667322635684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9ab0b38185025%3A0x533921bb5f55e750!2z0KHQtdC90YLRgNCw0Lsg0JHQuNC30L3QtdGBINCU0LjRgdGC0YDQuNC60YIsINCl0L7Qu9C70LjQstGD0LQsINCk0LvQvtGA0LjQtNCwIDMzMDIwLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1660158574177!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
