@@ -9,42 +9,75 @@
 }
 
 .product__list{
+    --items: 1;
+
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;
-    --items: 1;
-
-    @media screen and(min-width:768px){
     --items: 3;
     }
 }
 
 .product__item {
+    position: relative;
     text-align: center;
-}
 
-.product__dessert{
-    
-   background-color: #FFB8CA;
-    width: 280px;
-    height: 629px;
-       
-    
-        @media screen and(min-width:768px) {
-            width: 224px;
-            height: 611px;
+    margin-top: 150px;
+    max-width: 280px;
+    height: 489px;
+    border-radius: 24px;
+        
+    background-color: #FFB8CA;
+        
+        &--second {
+        background-color: #F0D1A5;
+        }
+        
+        &--third {
+            background-color: #C2E297;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin-left: auto;
+            margin-right: auto;
         }
     
-        @media screen and(min-width:1200px) {
-            width: 368px;
+        @media screen and (min-width: 768px) {
+            max-width: 224px;
+            height: 473px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-top: 290px;
+            max-width: 368px;
             height: 535px;
         }
-
-    
 }
-    
+
+.product__img {
+    position: absolute;
+    top: -31%;
+    left: 0;
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+        top: -29%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        top: -52%;
+    }
+} 
 
 .product__title{
+    padding-top: 155px;
+    padding-bottom: 70px;
+
     font-family: 'Titan One';
     font-style: normal;
     font-size: 20px;
@@ -55,55 +88,92 @@
     
     color: var(--primary-text-color);
 
-    @media screen and(min-width:1200px){
-    font-size: 30px;
-    line-height: 1.13;
+    @media screen and (min-width: 768px) {
+        padding-top: 116px;
+        padding-bottom: 50px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 156px;
+        font-size: 30px;
+        line-height: 1.13;
     }
 
         &:before {
             content: "";
             position: absolute;
-            width: 10px;
-            height: 10px;
+            display: inline-block;
+            top: 43%;
+            left: 47%;
+            width: 6px;
+            height: 6px;
             border-radius: 50%;
-            background: gray;
-            box-shadow: -20px 0 0 grey, 20px 0 0 grey;
+            background: var(--primary-text-color);
+            box-shadow: -20px 0 0 var(--primary-text-color), 20px 0 0 var(--primary-text-color);
+
+            @media screen and (min-width: 768px) {
+                top: 35%;
+            }
+
+            @media screen and (min-width: 1200px) {
+                top: 39%;
+            }
         }
 }
 
 .product__subtitle{
-    font-family: 'DM Sans';
-    font-style: normal;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    width: 200px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--primary-text-color);
-    margin-bottom: 32px;
-    width: 200px;
-    height: 124px;
 
-    @media screen and(min-width:768px){
+    @media screen and (min-width: 768px){
         width: 160px;
-        height: 150px;
         line-height: 1.78;
     }
 
-        @media screen and(min-width:1200px){
-            width: 245px;
-            height: 106px;
-            font-size: 16px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 60px;
+        width: 245px;
+        font-size: 16px;
             
         }
 }
 
+.product__link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-text-color);
+    border-radius: 50%;
+    transition: background-color 250ms linear;
+    cursor: pointer;
 
-.product__wrap {
-    bottom: 0;
-    left: 25%;
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
 }
-    
+
+.product__arrow {
+    margin-top: 11px;
+    width: 15px;
+    height: 15px;
+    fill: var(--accent-color);
+    transition: fill 250ms linear;
+}
+
+.product__link:hover .product__arrow,
+.product__link:focus .product__arrow {
+    fill: var(--primary-text-color);
+}
     
 
 
