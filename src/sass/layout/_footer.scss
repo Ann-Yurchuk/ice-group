@@ -6,7 +6,11 @@
 .container{
     padding-left: 20px;
     padding-right: 20px;
-}
+    @media screen and (min-width: 768px) {
+        padding-left: 16px;
+       padding-right: 16px;
+       }
+    }
 
 // bootons
 
@@ -23,6 +27,10 @@
      flex-direction: row;
      justify-content: center;
     }
+
+    @media screen and (min-width: 768px) {
+     margin-bottom: 120px;
+       }
 }
 
 .btn__arow-white{
@@ -42,6 +50,20 @@
        }
 }
 
+.button{
+    justify-content: center;
+}
+
+// title
+.footer-title{
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+       }
+}
 .footer__description {
     font-family: Titan One;
     font-style: Regular;
@@ -55,12 +77,14 @@
         font-size: 26px;
         line-height: 1.13;
         margin-bottom: 12px;
+        width: 340px;
        }
     
     @media screen and (min-width: 1200px) {
         font-size: 30px;
         line-height: 1.14;
         margin-bottom: 16px;
+        width: 474px;
        }
 }
 
@@ -96,6 +120,14 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+       margin-top: 60px;
+       padding-left: 0;
+       }
+    @media screen and (min-width: 1200px) {
+       margin-top: 0;
+    }
 }
 
 .footer-socialmedia-link {
@@ -130,8 +162,20 @@
     font-size: 12px;
     line-height: 1.83;
     color: var(--secondary-text-color);
-    margin-top: 40px;
-}
+    justify-content: end;
+    display: flex;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.85;
+        }
+     @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 1.87;
+     }
+ }
+
 
 .footer__phone {
     color: var(--accent-color);
@@ -144,31 +188,32 @@
     align-items: center;
     color: var(--text-color);
     text-align: center;
-    margin-top: 16px;
+    padding-top: 16px;
     margin-left: auto;
     margin-right: auto;
     width: 160px;
+    border: none;
+    
 
     @media screen and (min-width: 768px) {
         width: 100%;
-        margin-top: 8px;
+        padding-top: 8px;
+        border-top: 1px solid #E1E1E1;
      }
 }
 
 
 
-.button{
-    justify-content: center;
-}
 
 
-
-
-
-.futer-socialmedia-item:not(:first-child){
+.futer-socialmedia-item{
     padding-left: 28px;
 }
 
 .footer_icon{
-    border-bottom: 1px solid var(--text-color);
-}
+    
+    border-bottom: 1px solid #E1E1E1;
+    @media screen and (min-width: 768px) {
+    border:none;
+    }
+} 
