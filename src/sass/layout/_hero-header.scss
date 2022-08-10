@@ -342,6 +342,7 @@
 
 
 .btn-header {
+
     @media screen and (max-width: 767px) {
         display: none;
     }
@@ -426,6 +427,11 @@
     border-radius: 50%;
     background-color: var(--secondary-accent-color);
 
+    animation: pulsate 2s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0.0;
+
+
     @media screen and (max-width: 767px) {
         left: 9%;
     }
@@ -481,10 +487,6 @@
     @media screen and (min-width: 1200px) {
         left: 2%;
     }
-}
-
-.hero-btn__products {
-    margin-right: 8px;
 }
 
 .hero__snap {
@@ -667,6 +669,10 @@
     border-radius: 50%;
     background-color: var(--primary-text-color);
 
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0.0;
+
     @media screen and (min-width: 1200px) {
         width: 30px;
         height: 30px;
@@ -688,6 +694,10 @@
     text-align: right;
     border-radius: 50%;
     background-color: var(--primary-text-color);
+
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0.0;
 
     @media screen and (min-width: 1200px) {
         width: 30px;
@@ -734,3 +744,4 @@
         fill: var(--secondary-btn-hover);
     }
 }
+
