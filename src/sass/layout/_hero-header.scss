@@ -175,14 +175,14 @@
 .mobile-menu-close {
     top: 0;
     right: 0;
-    opacity: 0;
+    opacity: 1;
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
 .mobile-menu-btn.is-open .mobile-menu-close {
-    opacity: 1;
+    opacity: 0;
 }
 
 .mobile-menu {
@@ -351,9 +351,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (max-width: 1199px) {
-        margin-top: 58px;
-    }
+    
 
     @media screen and (min-width: 1200px) {
         display: none;
@@ -705,4 +703,22 @@
         height: 241px;
         right: 2%;
     }
+}
+
+
+.side-nav__close-btn {
+    fill: #fff;
+    
+        margin-left: auto;
+        padding: 20px;
+        display: block;
+      
+        border: none;
+        background-color: transparent;
+    
+        &:hover,
+        &:focus {
+            outline: none;
+            fill: var(--secondary-btn-hover);
+        }
 }
