@@ -8,7 +8,7 @@
     align-items: center;
     text-align: center;
     height: 44px;
-    padding: 11px 23px;
+    padding: 11px 37px;
     border-radius: 22px;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -27,7 +27,7 @@
     background: var(--secondary-btn-color);
 
  &:hover {
-    background-color: var (--secondary-btn-hover);
+    background-color: var(--secondary-btn-hover);
 }
 }
 
