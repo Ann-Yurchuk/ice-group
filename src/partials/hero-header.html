@@ -1,20 +1,21 @@
 <section class="hero-header">
-  <div class="container header">
+  <div class="container hero-header__container">
     <header>
       <nav class="header__nav">
-        <a class="header__logo logo link" href="./index.html">
+        <a class="header__logo logo link" aria-label="logo" href="./index.html">
           <svg class="header__logo-icon" width="199" height="50">
             <use href="./images/icons.svg#icon-icecream-logo"></use>
           </svg>
         </a>
 
         <div class="header__btns">
-          <button
+          <button aria-label="button open"
             class="mobile-menu-btn js-open-menu"
             aria-expanded="false"
+
+            data-menu-button
             aria-controls="mobile-menu"
-            type="button"
-          >
+            type="button">
             <svg class="mobile-menu-icon" width="20" height="14">
               <use
                 class="mobile-menu-open"
@@ -22,17 +23,21 @@
               ></use>
             </svg>
           </button>
-          <!-- для пуша -->
+          
           <div class="mobile-menu js-menu-container" id="mobile-menu">
             <button type="button" class="side-nav__close-btn js-close-menu">
               <svg class="mobile-menu-close" width="16" height="16">
                 <use href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
-            <button class="button btn-primary btn-mobile-menu" type="button">
+            
+            <button type="button" class="button btn-primary btn-mobile-menu">
               Buy now
-              <svg class="btn__arow-white" width="9" height="16">
-                <use href="./images/icons.svg#icon-aroww-red"></use>
+              <svg class="btn-mobile-menu__svg" width="4" height="8">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+
+            
+
               </svg>
             </button>
             <ul class="mobile-menu-nav list">
@@ -99,21 +104,19 @@
               >
             </li>
           </ul>
-          <button class="button btn-primary btn-header" type="button">
+          <button type="button" class="button btn-primary btn-header">
             Buy now
-            <svg class="btn__arow-white" width="9" height="16">
-              <use href="./images/icons.svg#icon-aroww-red"></use>
-            </svg>
           </button>
         </div>
       </nav>
     </header>
 
     <div class="hero">
-      <h1 class="hero-title">
+      <h1 class="hero-title animate__animated animate__wobble">
         ice cream made with <span class="hero-title__current">passion</span>
       </h1>
       <!-- Ice-cream -->
+
       <picture class="hero__elipse">
         <!-- Desktop -->
         <source
@@ -159,7 +162,7 @@
       <div class="hero-btn">
         <button
           type="button"
-          class="button btn-secondary btn-hero btn-hero__products"
+          class="button btn-secondary btn-hero btn-hero__products magic"
         >
           Products
         </button>
@@ -199,14 +202,14 @@
         />
       </picture>
 
-      <p class="hero__descr">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-      </p>
       <a class="hero__wrap">
         <svg class="hero__arrow" width="7" height="7">
           <use href="./images/icons.svg#icon-arrow-right"></use>
         </svg>
+        <p class="hero__descr">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
       </a>
 
       <p class="hero-info hero-info--cafes">
