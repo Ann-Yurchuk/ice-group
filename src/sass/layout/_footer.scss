@@ -32,6 +32,11 @@
 .button__footer-map{
     margin-bottom: 10px;
 
+    &:hover,
+    &:focus{
+        opacity: .8;
+    }
+
 @media screen and (min-width: 768px) {
     margin-bottom: 0;
     margin-right: 14.5px;
@@ -52,6 +57,11 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+@media screen and (min-width: 1200px) {
+   margin-bottom: 60px;
+}
+
 }
 .footer__description {
     margin-bottom: 16px;
