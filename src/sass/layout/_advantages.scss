@@ -11,15 +11,13 @@
   }
 }
 .advantages__item {
-
   @media screen and (max-width: 767px) {
-      &:not(:last-child) {
-        margin-bottom: 32px;
-      }
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
   }
 
-
-@media screen and(min-width:768px) and (max-width: 1199px) {
+  @media screen and(min-width:768px) and (max-width: 1199px) {
     margin-left: 20px;
     max-height: 162px;
   }
@@ -145,8 +143,7 @@
     margin-bottom: 32px;
   }
 
-
-  @media screen and (min-width:768px) and (max-width:1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 180px;
     margin-bottom: 0;
     font-size: 14px;
@@ -160,4 +157,39 @@
     line-height: 1.75;
     letter-spacing: 0.02em;
   }
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.advantages__benefits-content {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
