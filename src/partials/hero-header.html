@@ -9,13 +9,14 @@
         </a>
 
         <div class="header__btns">
-          <button aria-label="button open"
+          <button
+            aria-label="button open"
             class="mobile-menu-btn js-open-menu"
             aria-expanded="false"
-
             data-menu-button
             aria-controls="mobile-menu"
-            type="button">
+            type="button"
+          >
             <svg class="mobile-menu-icon" width="20" height="14">
               <use
                 class="mobile-menu-open"
@@ -24,20 +25,21 @@
             </svg>
           </button>
 
-                    <div class="mobile-menu js-menu-container" id="mobile-menu">
-            <button type="button" class="side-nav__close-btn js-close-menu" aria-label="close-button">
+          <div class="mobile-menu js-menu-container" id="mobile-menu">
+            <button
+              type="button"
+              class="side-nav__close-btn js-close-menu"
+              aria-label="close-button"
+            >
               <svg class="mobile-menu-close" width="16" height="16">
                 <use href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
-            
+
             <button type="button" class="button btn-primary btn-mobile-menu">
               Buy now
               <svg class="btn-mobile-menu__svg" width="4" height="8">
                 <use href="./images/icons.svg#icon-arrow-right"></use>
-
-            
-
               </svg>
             </button>
             <ul class="mobile-menu-nav list">
@@ -104,7 +106,11 @@
               >
             </li>
           </ul>
-          <button type="button" class="button btn-primary btn-header">
+          <button
+            type="button"
+            class="button btn-primary btn-header"
+            data-modal-open-button
+          >
             Buy now
           </button>
         </div>
@@ -160,15 +166,16 @@
 
       <div class="hero__element"></div>
       <div class="hero-btn">
-        <button
+        <a
+          href="#products"
           type="button"
-          class="button btn-secondary btn-hero btn-hero__products magic"
+          class="link button btn-secondary btn-hero btn-hero__products"
         >
           Products
-        </button>
-        <button type="button" class="button btn-primary btn-hero">
+        </a>
+        <a href="#about" type="button" class="link button btn-primary btn-hero">
           How it's made
-        </button>
+        </a>
       </div>
 
       <!-- Milk -->
@@ -253,6 +260,125 @@
           height="150"
         />
       </picture>
+    </div>
+
+    <!-- Модалка -->
+    <div class="backdrop is-hidden backdrop__header" data-modal-hero>
+      <div class="modal is-hidden">
+        <button class="btn-close" data-modal-close-button>
+          <svg class="btn-close__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+
+        <form class="form" autocomplete="off">
+          <p class="form__text">Make an order</p>
+          <div class="form__field">
+            <label class="form__label" for="user-name">Name</label>
+            <input
+              class="form__input"
+              type="text"
+              id="user-name"
+              name="user-name"
+            />
+            <span class="form__wrapper">
+              <svg class="form__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-user-check"></use>
+              </svg>
+            </span>
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="user-tel">Phone</label>
+            <input
+              class="form__input"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+            />
+            <span class="form__wrapper">
+              <svg class="form__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="user-email">Email</label>
+            <input
+              class="form__input"
+              type="email"
+              id="user-email"
+              name="user-email"
+            />
+            <span class="form__wrapper">
+              <svg class="form__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </span>
+          </div>
+
+          <div class="form__checkbox">
+            <p class="form__text form__text--checkbox">
+              What ice-cream do you want?
+            </p>
+            <div class="checklist">
+              <label class="checklist__label">
+                <input
+                  class="checklist__input"
+                  type="checkbox"
+                  name="ice-scream"
+                  value="vanillia"
+                  checked
+                />
+                <span class="checklist__icon"></span>
+                Vanillia
+              </label>
+              <label class="checklist__label">
+                <input
+                  class="checklist__input"
+                  type="checkbox"
+                  name="ice-scream"
+                  value="chocolate"
+                />
+                <span class="checklist__icon"></span>
+                Chocolate
+              </label>
+              <label class="checklist__label">
+                <input
+                  class="checklist__input"
+                  type="checkbox"
+                  name="ice-scream"
+                  value="strawberry"
+                />
+                <span class="checklist__icon"></span>
+                Strawberry
+              </label>
+              <label class="checklist__label">
+                <input
+                  class="checklist__input"
+                  type="checkbox"
+                  name="ice-scream"
+                  value="cake"
+                />
+                <span class="checklist__icon"></span>
+                Cake
+              </label>
+            </div>
+          </div>
+
+          <label class="form__label" for="comment">Comment</label>
+          <textarea
+            class="form__comment"
+            name="comment"
+            id="comment"
+            placeholder="Введите текст"
+          ></textarea>
+          <button class="button btn-secondary button__modal" type="submit">
+            Send order
+          </button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
