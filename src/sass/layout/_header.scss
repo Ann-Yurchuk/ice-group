@@ -364,8 +364,9 @@
 }
 
 
+// HERO
 
-.header-title {
+.hero-title {
     position: absolute;
     bottom: 40%;
     left: 5%;
@@ -411,7 +412,6 @@
     }
 }
 
-// HERO
 .hero__elipse::before {
     content: '';
     display: inline-block;
