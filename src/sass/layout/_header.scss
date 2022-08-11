@@ -750,7 +750,7 @@
     z-index: 1001;
 }
 
-.modal {
+.modal__header {
     width: 95%;
 
     @media screen and (min-width: 768px) {
@@ -782,7 +782,7 @@
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden .modal {
+.backdrop.is-hidden .modal__header {
     transform: translate(-50%, -50%) scale(1.25);
     opacity: 0;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
