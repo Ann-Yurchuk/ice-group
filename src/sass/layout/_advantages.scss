@@ -2,6 +2,13 @@
   background-color: var(--secondary-bcg-color);
 }
 
+.advantages__container {
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
 .advantages__list {
   display: block;
 

@@ -21,7 +21,8 @@
 
 .customers-reviews__img {
     margin-bottom: 32px;
-    margin-left: 96px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (min-width: 768px) {
         margin-left: auto;
@@ -31,19 +32,24 @@
 
 .customer-reviews__wrapper {
     padding: 30px 0 30px 0;
-    width: 280px;
-    height: 308px;
+
+    min-width: 280px;
+    max-height: 308px;
 
     background-color: #fafafa;
 
-    @media screen and (min-width: 768px) {
-        width: 968px;
-        height: 138px;
+@media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 620px;
+    max-height: 164px;
     }
 
-    @media screen and (min-width: 1200px) {
-        margin-left: auto;
-        margin-right: auto;
+@media screen and (min-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 968px;
+    height: 138px;
     }
 }
 
@@ -77,13 +83,14 @@
     transition: color 250ms linear;
     cursor: pointer;
 
+
+
     &:hover, 
     &:focus {
         color: var(--accent-color);
     }
 
     @media screen and (min-width: 768px) {
-        margin-left: 57px;
         margin-top: 15px;
         width: 62%;
     }
@@ -157,4 +164,3 @@
     background-color: #ffffff;
     border-radius: 0;
 }
-

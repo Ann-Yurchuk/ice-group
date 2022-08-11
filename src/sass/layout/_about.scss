@@ -47,6 +47,13 @@
 
 }
 
+.about__container {
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}
+
 .about__titles {
     margin-right: auto;
 
