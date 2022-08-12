@@ -75,15 +75,30 @@
     margin-bottom: 32px;
 }
 
-.about__description.paragraph {
+.about__paragraph {
     margin-bottom: 17px;
+    width: 220px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    color: var(--text-color);
+                
 
     @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.79;
+        letter-spacing: 0.04em;
+        width: 334px;
         margin-bottom: 62px;
     }
 
     @media screen and (min-width: 1200px) {
+        width: 463px;
         margin-bottom: 45px;
+        font-size: 14px;
+        line-height: 1.93;
+        letter-spacing: 0.04em;
     }
 }
 
