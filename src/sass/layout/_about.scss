@@ -49,6 +49,10 @@
 
 .about__container {
 
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+
     @media screen and (min-width: 1200px) {
         max-width: 1200px;
     }
@@ -78,6 +82,8 @@
 .about__paragraph {
     margin-bottom: 17px;
     width: 220px;
+    margin-left: auto;
+    margin-right: auto;
 
     font-weight: 500;
     font-size: 12px;
@@ -89,13 +95,13 @@
         font-size: 14px;
         line-height: 1.79;
         letter-spacing: 0.04em;
-        width: 334px;
-        margin-bottom: 62px;
+        min-width: 334px;
+        margin-bottom: 40px;
     }
 
     @media screen and (min-width: 1200px) {
         width: 463px;
-        margin-bottom: 45px;
+        margin-bottom: 40px;
         font-size: 14px;
         line-height: 1.93;
         letter-spacing: 0.04em;
@@ -134,7 +140,7 @@
     @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 1.79;
-        width: 334px;
+        min-width: 334px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -195,10 +201,12 @@
 
 .about__main-text {
     @media screen and (min-width: 768px) {
+        margin-left: 32px;
         padding-top: 40px;
     }
 
     @media screen and (min-width: 1200px) {
         padding-top: 0;
+        margin-left: 0;
     }
 }
