@@ -25,6 +25,10 @@
     padding-left: 16px;
     padding-right: 16px;
 }
+
+@media screen and (min-width: 1200px) {
+    max-width: 1200px;
+}
 }
 
 .contacts__boxes {
@@ -226,3 +230,34 @@
     color: var(--secondary-btn-color);
 }
 
+
+@keyframes swivelChair {
+    from {
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+
+    40% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        animation-timing-function: ease-in;
+    }
+
+    60% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+
+    to {
+        transform: perspective(400px);
+    }
+}
+
+.swivelChair {
+    animation-name: swivelChair;
+    animation-duration: 2s;
+}

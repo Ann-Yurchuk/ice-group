@@ -3,6 +3,12 @@
     padding-bottom: 0;
 }
 
+.footer__container {
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}
+
 // buttons
 
 .footer__btn{
@@ -105,6 +111,7 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     margin-bottom: 40px;
+    padding: 0;
 
 @media screen and (min-width: 768px) {
     margin-top: 60px;
@@ -186,9 +193,10 @@
 }
 }
 
-.futer-socialmedia-item{
-    padding-left: 28px;
+.futer-socialmedia-item:not(:last-child) {
+    margin-right: 28px;
 }
+
 
 .footer_icon{
     border-bottom: 1px solid #E1E1E1;
