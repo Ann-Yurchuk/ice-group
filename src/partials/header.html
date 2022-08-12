@@ -179,7 +179,7 @@
         >
           Products
         </a>
-        <a href="#about" class="link button btn-primary btn-hero">
+        <a href="#how" class="link button btn-primary btn-hero">
           How it's made
         </a>
       </div>
@@ -271,7 +271,7 @@
     <!-- Модалка tablet, desktop-->
     <div class="backdrop is-hidden backdrop__header" data-modal-hero>
       <div class="modal modal__header is-hidden">
-        <button class="btn-close" data-modal-close-button>
+        <button class="btn-close" aria-label="close-button" data-modal-close-button>
           <svg class="btn-close__icon" width="18" height="18">
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
@@ -280,12 +280,12 @@
         <form class="form" autocomplete="off">
           <p class="form__text">Make an order</p>
           <div class="form__field">
-            <label class="form__label" for="user-name">Name</label>
+            <label class="form__label" for="username">Name</label>
             <input
               class="form__input"
               type="text"
-              id="user-name"
-              name="user-name"
+              id="username"
+              name="username"
             />
             <span class="form__wrapper">
               <svg class="form__icon" width="18" height="18">
@@ -295,12 +295,12 @@
           </div>
 
           <div class="form__field">
-            <label class="form__label" for="user-tel">Phone</label>
+            <label class="form__label" for="usertel">Phone</label>
             <input
               class="form__input"
               type="tel"
-              id="user-tel"
-              name="user-tel"
+              id="usertel"
+              name="usertel"
             />
             <span class="form__wrapper">
               <svg class="form__icon" width="18" height="18">
@@ -310,12 +310,12 @@
           </div>
 
           <div class="form__field">
-            <label class="form__label" for="user-email">Email</label>
+            <label class="form__label" for="useremail">Email</label>
             <input
               class="form__input"
               type="email"
-              id="user-email"
-              name="user-email"
+              id="useremail"
+              name="useremail"
             />
             <span class="form__wrapper">
               <svg class="form__icon" width="18" height="18">
@@ -387,9 +387,8 @@
           <textarea
             class="form__comment"
             name="comment"
-            id="comment"
-            placeholder="Write what you want"
-          ></textarea>
+            placeholder="Write what you want">
+          </textarea>
           <button
             class="button btn-secondary button__modal acidTrip"
             type="submit"
@@ -403,7 +402,7 @@
     <!-- Модалка mobile -->
     <div class="backdrop is-hidden backdrop__header" data-modal-mobile>
       <div class="modal modal__header is-hidden">
-        <button class="btn-close" data-modal-close-mobile>
+        <button class="btn-close" aria-label="close-button" data-modal-close-mobile>
           <svg class="btn-close__icon" width="18" height="18">
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
